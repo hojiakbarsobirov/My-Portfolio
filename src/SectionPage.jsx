@@ -3,11 +3,12 @@ import GitIcons from "../public/github.png";
 import InIcons from "../public/iconss.png";
 import { Link } from "react-router-dom";
 import InstaIcons from "../public/insta-icons.png";
+import './App.css'
 
 const SectionPage = () => {
   return (
     <>
-      <section className="bg-[url('image.png')] w-full h-[85vh] bg-cover bg-center">
+      <section className="background-banner">
         <header className=" w-full h-[80%] flex">
           <div className=" w-[50%] h-full flex justify-around items-end flex-col">
             <section className="w-[88%] h-full flex justify-evenly items-start flex-col">
