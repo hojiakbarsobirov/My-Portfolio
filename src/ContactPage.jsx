@@ -10,7 +10,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="w-full h-auto p-5 flex justify-center items-center">
+      <div className="w-full h-auto p-10 flex justify-center items-center">
         <p className="sm:w-[70%] text-center">
           Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
           varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
