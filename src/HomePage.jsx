@@ -6,8 +6,8 @@ const HomePage = () => {
   return (
     <>
     <SectionPage/>
-      <section className="bg-gray-200 w-full h-[40vh] flex justify-center items-center">
-        <header className='bg-[url("/public/Background.png")] text-white px-10 w-full h-[35vh] bg-cover bg-center flex justify-around items-start flex-col'>
+      <section className="bg-gray-200 w-full h-auto flex justify-center items-center">
+        <header className='bg-[url("/public/Background.png")] text-white px-10 w-full h-auto p-5 space-y-5 bg-cover bg-center flex justify-around items-start flex-col'>
           <h2 className="font-medium text-xl">IT BARRIES</h2>
 
           <p className="w-[80%]">

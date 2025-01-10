@@ -17,7 +17,7 @@ import AILogo from '../public/suniy-intellekt.png'
 const SkillsPage = () => {
   return (
     <>
-      <section className="bg-gray-200 w-full h-screen">
+      <section className="bg-gray-200 w-full h-auto p-10">
         <div className=" w-full h-32 flex justify-center items-center">
           <div className="font-bold text-4xl border-[6px] border-black w-[230px] flex justify-center items-center px-4 py-3">
             SKILLS
@@ -29,7 +29,7 @@ const SkillsPage = () => {
           <p></p>
         </div>
 
-        <header className="w-full h-[150px] flex justify-center items-center space-x-16">
+        <header className="w-full h-auto  p-5 flex flex-wrap justify-center items-center flex-1 gap-16">
           <div className="flex justify-center items-center flex-col space-y-2">
             <img className="w-14" src={HTMLlogo} alt="" />
             <p>HTML5</p>
@@ -76,7 +76,7 @@ const SkillsPage = () => {
           <p></p>
         </div>
 
-        <header className=" w-full h-[150px] flex justify-center space-x-20 items-center">
+        <header className="w-full h-auto p-5 flex flex-wrap justify-center items-center gap-16">
           <div className="flex justify-center items-center flex-col space-y-2">
             <img className="w-14" src={NodeLogo} alt="" />
             <p>NODE JS</p>

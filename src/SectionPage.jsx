@@ -1,8 +1,8 @@
 import React from "react";
-import GitIcons from "../public/github.png";
-import InIcons from "../public/iconss.png";
+import GitIcons from "/public/github.png";
+import InIcons from "/public/iconss.png";
 import { Link } from "react-router-dom";
-import InstaIcons from "../public/insta-icons.png";
+import InstaIcons from "/public/insta-icons.png";
 import './App.css'
 
 const SectionPage = () => {
@@ -26,16 +26,16 @@ const SectionPage = () => {
                     target="_blank"
                     to={"https://www.instagram.com/sobrvkh/"}
                   >
-                    <img className="w-8 hover:scale-110 transition ease-in" src={InstaIcons} alt="" />
+                    <img className="w-10 hover:scale-110 transition ease-in" src={InstaIcons} alt="" />
                   </Link>
                 </button>
                 <button className="bg-gray-400 font-bold px-3 py-2 text-xl rounded-md shadow-xl">
                   <Link to={"https://github.com/hojiakbarsobirov"}>
-                    <img className="w-7 hover:scale-110 transition ease-in" src={GitIcons} alt="" />
+                    <img className="w-10 hover:scale-110 transition ease-in" src={GitIcons} alt="" />
                   </Link>
                 </button>
                 <button className="bg-gray-400 font-bold px-3 py-2 text-xl rounded-md shadow-xl">
-                  <img className="w-7 hover:scale-110 transition ease-in" src={InIcons} alt="" />
+                  <img className="w-10 hover:scale-110 transition ease-in" src={InIcons} alt="" />
                 </button>
               </div>
             </section>

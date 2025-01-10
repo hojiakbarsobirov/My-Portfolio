@@ -3,15 +3,15 @@ import React from "react";
 const ContactPage = () => {
   return (
     
-    <section className="bg-gray-200 w-full h-[105vh]">
-      <div className=" w-full h-32 flex justify-center items-center">
+    <section className="bg-gray-200 w-full h-auto p-5">
+      <div className=" w-full h-auto p-5 flex justify-center items-center">
         <div className="font-bold text-4xl border-[6px] border-black w-[230px] flex justify-center items-center px-4 py-3">
           CONTACT
         </div>
       </div>
 
-      <div className="w-full h-20 flex justify-center items-center">
-        <p className="w-[55%] text-center">
+      <div className="w-full h-auto p-5 flex justify-center items-center">
+        <p className="sm:w-[70%] text-center">
           Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
           varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
           quis libero viverra facilisis ut ac est.

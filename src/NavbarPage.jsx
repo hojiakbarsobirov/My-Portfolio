@@ -1,34 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import NavLogo from "../public/Group.png";
 import { Link } from "react-router-dom";
 
 const NavbarPage = () => {
-  return (
-    <section className="bg-white w-full h-20 flex justify-between items-center px-20 sticky top-0 shadow-lg">
-      <img className="w-10" src={NavLogo} alt="" />
+  const [isOpen, setIsOpen] = useState(false);
 
-      <ul className="font-medium flex items-center space-x-10 text-[18px] ">
-        <li>
-          <Link className="focus:border-b-[2px] border-black" to={"/"}>
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <section className="bg-white w-full h-20 flex justify-between items-center px-5 md:px-20 sticky top-0 shadow-lg">
+      <img className="w-10" src={NavLogo} alt="Logo" />
+
+      {/* Burger Button */}
+      <div className="md:hidden" onClick={toggleMenu}>
+        <div className="w-6 h-1 bg-black mb-1"></div>
+        <div className="w-6 h-1 bg-black mb-1"></div>
+        <div className="w-6 h-1 bg-black"></div>
+      </div>
+
+      {/* Menu */}
+      <ul
+        className={`${
+          isOpen ? "block" : "hidden"
+        } absolute top-16 left-0 bg-white w-full shadow-lg md:static md:flex md:space-x-10 md:shadow-none font-medium items-center text-[18px]`}
+      >
+        <li className="border-b md:border-none">
+          <Link className="block py-2 px-5 md:py-0" to={"/"}>
             Home
           </Link>
         </li>
-        <li>
-          <Link className="focus:border-b-[2px] border-black" to={"/about"}>
+        <li className="border-b md:border-none">
+          <Link className="block py-2 px-5 md:py-0" to={"/about"}>
             About me
           </Link>
         </li>
-        <li>
-          <Link className="focus:border-b-[2px] border-black" to={"/skills"}>
+        <li className="border-b md:border-none">
+          <Link className="block py-2 px-5 md:py-0" to={"/skills"}>
             Skills
           </Link>
         </li>
-        <li>
-          <Link className="focus:border-b-[2px] border-black" to={"/portfolio"}>
+        <li className="border-b md:border-none">
+          <Link className="block py-2 px-5 md:py-0" to={"/portfolio"}>
             Portfolio
           </Link>
         </li>
-        <button className="bg-black text-white text-sm px-3 py-2 rounded-full">
+        <button className="block bg-black text-white text-sm px-3 py-2 rounded-full mx-auto md:mx-0">
           <Link to={"/contact"}>Contact me</Link>
         </button>
       </ul>

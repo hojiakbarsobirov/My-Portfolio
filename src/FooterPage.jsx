@@ -7,7 +7,7 @@ import FooterEmail from "../public/footer-email.svg";
 
 const FooterPage = () => {
   return (
-    <section className="bg-black w-full h-[35vh] flex justify-center items-center">
+    <section className="bg-black w-full h-auto p-5 space-x-5 flex justify-center items-center">
       <center>
         <img className="w-5 mb-5" src={FooterIcons} alt="" />
 
