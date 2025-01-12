@@ -49,7 +49,7 @@ const AboutPage = () => {
           </div>
         </header>
 
-        <div className="w-full h-auto py-8 flex justify-center items-center">
+        <div className="w-full h-auto py-8 flex justify-center items-end">
           <img className="w-32" src={logotip} alt="" />
         </div>
       </section>
