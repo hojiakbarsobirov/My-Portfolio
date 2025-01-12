@@ -31,13 +31,17 @@ const NavbarPage = () => {
         } absolute top-16 left-0 bg-white w-full shadow-lg md:static md:flex md:space-x-10 md:shadow-none font-medium items-center text-[18px]`}
       >
         <li className="border-b md:border-none">
-          <Link className="block py-2 px-5 md:py-0" to={"/"} onClick={closeMenu}>
+          <Link
+            className="block py-2 px-5 md:py-0 focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
+            to={"/"}
+            onClick={closeMenu}
+          >
             Home
           </Link>
         </li>
         <li className="border-b md:border-none">
           <Link
-            className="block py-2 px-5 md:py-0"
+            className="block py-2 px-5 md:py-0 focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
             to={"/about"}
             onClick={closeMenu}
           >
@@ -46,7 +50,7 @@ const NavbarPage = () => {
         </li>
         <li className="border-b md:border-none">
           <Link
-            className="block py-2 px-5 md:py-0"
+            className="block py-2 px-5 md:py-0 focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
             to={"/skills"}
             onClick={closeMenu}
           >
@@ -55,7 +59,7 @@ const NavbarPage = () => {
         </li>
         <li className="border-b md:border-none">
           <Link
-            className="block py-2 px-5 md:py-0"
+            className="block py-2 px-5 md:py-0 focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
             to={"/portfolio"}
             onClick={closeMenu}
           >
@@ -63,7 +67,11 @@ const NavbarPage = () => {
           </Link>
         </li>
         <button className="block bg-black text-white text-sm px-3 py-2 rounded-full mx-auto md:mx-0">
-          <Link to={"/contact"} onClick={closeMenu}>
+          <Link
+            to={"/contact"}
+            onClick={closeMenu}
+            className="focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
+          >
             Contact me
           </Link>
         </button>
