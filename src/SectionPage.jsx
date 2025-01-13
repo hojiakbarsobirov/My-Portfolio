@@ -23,7 +23,7 @@ const SectionPage = () => {
                 <button className="bg-gray-400 font-bold  rounded-md shadow-xl">
                   <Link
                     target="_blank"
-                    to={"https://www.instagram.com/sobrvkh/"}
+                    to={"https://uz.linkedin.com/"}
                   >
                     <i className="text-4xl px-2 py-1 fa-brands fa-square-instagram"></i>
                   </Link>

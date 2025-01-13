@@ -1,9 +1,6 @@
 import React from "react";
 import FooterIcons from "../public/footer-icons.svg";
-import Facebook from "../public/facebook-icons.svg";
-import FooterIn from "../public/footer-in.svg";
-import FooterInsta from "../public/footer-insta.svg";
-import FooterEmail from "../public/footer-email.svg";
+import { Link } from "react-router-dom";
 
 const FooterPage = () => {
   return (
@@ -14,10 +11,18 @@ const FooterPage = () => {
         <p className="text-white font-medium text-sm mb-5">BACK TO TOP</p>
 
         <div className="flex items-center w-full justify-center space-x-5 mb-5">
-          <img className="w-5" src={Facebook} alt="" />
-          <img className="w-5" src={FooterIn} alt="" />
-          <img className="w-5" src={FooterInsta} alt="" />
-          <img className="w-5" src={FooterEmail} alt="" />
+        <Link to={'https://www.facebook.com/'}>
+        <i className="fa-brands fa-facebook text-white"></i>
+        </Link>
+          <Link to={'https://uz.linkedin.com/'}>
+          <i className="fa-brands fa-linkedin text-white"></i>
+          </Link>
+          <Link to={'https://uz.linkedin.com/'}>
+          <i className="fa-brands fa-instagram text-white"></i>
+          </Link>
+          <Link to={'https://mail.google.com/mail/u/0/#inbox'}>
+          <i className="fa-solid fa-envelope text-white"></i>
+          </Link>
         </div>
 
         <div>
