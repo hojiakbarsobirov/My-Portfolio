@@ -53,8 +53,6 @@ const AboutPage = () => {
           <img className="w-32" src={logotip} alt="" />
         </div>
       </section>
-
-      <FooterPage />
     </>
   );
 };

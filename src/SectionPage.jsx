@@ -3,6 +3,9 @@ import GitIcons from "/public/github.png";
 import InIcons from "/public/iconss.png";
 import { Link } from "react-router-dom";
 import './App.css'
+import AboutPage from "./AboutPage";
+import SkillsPage from "./SkillsPage";
+import PortfolioPage from "./PortfolioPage";
 
 const SectionPage = () => {
   return (
@@ -44,6 +47,9 @@ const SectionPage = () => {
           </div>
         </header>
       </section>
+      <AboutPage/>
+      <SkillsPage/>
+      <PortfolioPage/>
     </>
   );
 };
