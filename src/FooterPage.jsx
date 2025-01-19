@@ -17,7 +17,7 @@ const FooterPage = () => {
           <Link to={'https://uz.linkedin.com/'}>
           <i className="fa-brands fa-linkedin text-white"></i>
           </Link>
-          <Link to={'https://uz.linkedin.com/'}>
+          <Link to={'https://www.instagram.com/sobrvkh/'}>
           <i className="fa-brands fa-instagram text-white"></i>
           </Link>
           <Link to={'https://mail.google.com/mail/u/0/#inbox'}>
