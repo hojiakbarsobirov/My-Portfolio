@@ -30,44 +30,44 @@ const SkillsPage = () => {
         </div>
 
         <header className="w-full h-auto  p-5 flex flex-wrap justify-center items-center flex-1 gap-16">
-          <div className="flex justify-center items-center flex-col space-y-2">
-            <img className="w-14" src={HTMLlogo} alt="" />
-            <p>HTML5</p>
+          <div className="flex justify-center items-center space-x-2 rounded-xl shadow-lg px-4 py-2">
+            <img className="w-10" src={HTMLlogo} alt="" />
+            <p className="font-medium">HTML5</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-2">
-            <img className="w-14" src={CSSlogo} alt="" />
-            <p>CSS3</p>
+          <div className="flex justify-center items-center space-x-2 px-4 py-2 rounded-xl shadow-lg">
+            <img className="w-10" src={CSSlogo} alt="" />
+            <p className="font-medium">CSS3</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-4">
-            <img className="w-14" src={JavaScript} alt="" />
-            <p>JAVASCRIPT</p>
+          <div className="flex justify-center items-center px-4 py-3 shadow-lg rounded-xl space-x-3">
+            <img className="w-10" src={JavaScript} alt="" />
+            <p className="font-medium">JAVASCRIPT</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-4">
-            <img className="w-14" src={bootstrap} alt="" />
-            <p>BOOTSTRAP</p>
+          <div className="flex justify-center items-center px-4 py-3 shadow-lg rounded-xl space-x-3">
+            <img className="w-10" src={bootstrap} alt="" />
+            <p className="font-medium">BOOTSTRAP</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-4">
-            <img className="w-14" src={GitLogo} alt="" />
-            <p>GIT</p>
+          <div className="flex justify-center items-center shadow-lg  px-4 py-3 rounded-xl space-x-3">
+            <img className="w-10" src={GitLogo} alt="" />
+            <p className="font-medium">GIT</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-8">
-            <img className="w-14" src={Tailwind} alt="" />
-            <p>TAILWIND</p>
+          <div className="flex justify-center items-center px-4 py-4 shadow-lg rounded-xl space-x-3">
+            <img className="w-10" src={Tailwind} alt="" />
+            <p className="font-medium">TAILWIND</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-2">
-            <img className="w-14" src={ReactLogo} alt="" />
-            <p>React</p>
+          <div className="flex justify-center items-center px-4 py-3 shadow-lg rounded-xl space-x-2">
+            <img className="w-10" src={ReactLogo} alt="" />
+            <p className="font-medium">React</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-2">
-            <img className="w-14" src={ViteLogo} alt="" />
-            <p>Vite</p>
+          <div className="flex justify-center items-center px-4 py-3 shadow-lg rounded-xl space-x-2">
+            <img className="w-10" src={ViteLogo} alt="" />
+            <p className="font-medium">Vite</p>
           </div>
         </header>
 
@@ -77,29 +77,29 @@ const SkillsPage = () => {
         </div>
 
         <header className="w-full h-auto p-5 flex flex-wrap justify-center items-center gap-16">
-          <div className="flex justify-center items-center flex-col space-y-2">
-            <img className="w-14" src={NodeLogo} alt="" />
-            <p>NODE JS</p>
+          <div className="flex justify-center items-center px-4 py-3 shadow-lg rounded-xl space-x-2">
+            <img className="w-10" src={NodeLogo} alt="" />
+            <p className="font-medium">NODE JS</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-2">
-            <img className="w-14" src={Typescript} alt="" />
-            <p>TYPESCRIPT</p>
+          <div className="flex justify-center items-center px-4 py-3 shadow-lg rounded-xl space-x-2">
+            <img className="w-10" src={Typescript} alt="" />
+            <p className="font-medium">TYPESCRIPT</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-2">
-            <img className="w-14" src={AILogo} alt="" />
-            <p>AI</p>
+          <div className="flex justify-center items-center px-4 py-3 shadow-lg rounded-xl space-x-2">
+            <img className="w-10" src={AILogo} alt="" />
+            <p className="font-medium">AI</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-2">
-            <img className="w-14" src={PythonLogo} alt="" />
-            <p>PYTHON</p>
+          <div className="flex justify-center items-center px-4 py-3 shadow-lg rounded-xl space-x-2">
+            <img className="w-10" src={PythonLogo} alt="" />
+            <p className="font-medium">PYTHON</p>
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-2">
-            <img className="w-14" src={ExpressJs} alt="" />
-            <p>EXPRESS JS</p>
+          <div className="flex justify-center items-center px-4 py-3 shadow-lg rounded-xl space-x-2">
+            <img className="w-10" src={ExpressJs} alt="" />
+            <p className="font-medium">EXPRESS JS</p>
           </div>
         </header>
       </section>
