@@ -30,7 +30,7 @@ const NavbarPage = () => {
           isOpen ? "block" : "hidden"
         } absolute top-16 left-0 bg-white w-full shadow-lg md:static md:flex md:space-x-10 md:shadow-none font-medium items-center text-[18px]`}
       >
-        <li className="border-b md:border-none">
+        <li className="border-b md:border-none flex justify-center items-center py-4">
           <Link
             className="block py-2 px-5 md:py-0 focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
             to={"/"}
@@ -39,34 +39,7 @@ const NavbarPage = () => {
             Home
           </Link>
         </li>
-        <li className="border-b md:border-none">
-          <Link
-            className="block py-2 px-5 md:py-0 focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
-            to={"/about"}
-            onClick={closeMenu}
-          >
-            About me
-          </Link>
-        </li>
-        <li className="border-b md:border-none">
-          <Link
-            className="block py-2 px-5 md:py-0 focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
-            to={"/skills"}
-            onClick={closeMenu}
-          >
-            Skills
-          </Link>
-        </li>
-        <li className="border-b md:border-none">
-          <Link
-            className="block py-2 px-5 md:py-0 focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
-            to={"/portfolio"}
-            onClick={closeMenu}
-          >
-            Portfolio
-          </Link>
-        </li>
-        <button className="block bg-black text-white text-sm px-3 py-2 rounded-full mx-auto md:mx-0">
+        <button className="block bg-black text-white text-sm px-3 py-4 rounded-full mx-auto md:mx-0">
           <Link
             to={"/contact"}
             onClick={closeMenu}

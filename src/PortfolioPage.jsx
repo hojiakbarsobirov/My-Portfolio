@@ -10,8 +10,6 @@ const PortfolioPage = () => {
         </div>
       </div>
       <section className="bg-gray-200 w-full h-screen"></section>
-
-      <FooterPage/>
     </>
   );
 };

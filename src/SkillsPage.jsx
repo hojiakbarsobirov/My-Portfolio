@@ -9,7 +9,6 @@ import ViteLogo from "../public/vite-logo.png";
 import NodeLogo from "../public/node-js.png";
 import Typescript from "../public/typescript.png";
 import ExpressJs from "../public/express-js.svg";
-import FooterPage from "./FooterPage";
 import GitLogo from '../public/git.png'
 import PythonLogo from '../public/python.png'
 import AILogo from '../public/suniy-intellekt.png'
@@ -103,8 +102,6 @@ const SkillsPage = () => {
           </div>
         </header>
       </section>
-
-      <FooterPage />
     </>
   );
 };

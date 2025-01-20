@@ -2,8 +2,10 @@ import React from "react";
 import GitIcons from "/public/github.png";
 import InIcons from "/public/iconss.png";
 import { Link } from "react-router-dom";
-import InstaIcons from "/public/insta-icons.png";
 import './App.css'
+import AboutPage from "./AboutPage";
+import SkillsPage from "./SkillsPage";
+import PortfolioPage from "./PortfolioPage";
 
 const SectionPage = () => {
   return (
@@ -21,21 +23,21 @@ const SectionPage = () => {
               </div>
 
               <div className=" w-[50%] h-20 flex justify-start space-x-10 items-center">
-                <button className="bg-gray-400 font-bold px-3 py-2 text-2xl rounded-md shadow-xl">
+                <button className="bg-gray-400 font-bold  rounded-md shadow-xl">
                   <Link
                     target="_blank"
                     to={"https://www.instagram.com/sobrvkh/"}
                   >
-                    <img className="w-10 hover:scale-110 transition ease-in" src={InstaIcons} alt="" />
+                    <i className="text-4xl px-2 py-1 fa-brands fa-square-instagram"></i>
                   </Link>
                 </button>
-                <button className="bg-gray-400 font-bold px-3 py-2 text-xl rounded-md shadow-xl">
+                <button className="bg-gray-400 font-bold rounded-md shadow-xl">
                   <Link to={"https://github.com/hojiakbarsobirov"}>
-                    <img className="w-10 hover:scale-110 transition ease-in" src={GitIcons} alt="" />
+                    <i className="w-full px-3 py-2 text-3xl fa-brands fa-github"></i>
                   </Link>
                 </button>
-                <button className="bg-gray-400 font-bold px-3 py-2 text-xl rounded-md shadow-xl">
-                  <img className="w-10 hover:scale-110 transition ease-in" src={InIcons} alt="" />
+                <button className="bg-gray-400 font-bold text-xl rounded-md shadow-xl">
+                  <i className="fa-brands fa-linkedin text-3xl px-3 py-2"></i>
                 </button>
               </div>
             </section>
@@ -45,6 +47,9 @@ const SectionPage = () => {
           </div>
         </header>
       </section>
+      <AboutPage/>
+      <SkillsPage/>
+      <PortfolioPage/>
     </>
   );
 };
