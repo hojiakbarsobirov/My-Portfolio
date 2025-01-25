@@ -10,7 +10,8 @@ const PortfolioPage = () => {
           PORTFOLIO
         </div>
       </div>
-      <section className="bg-gray-200 w-full h-[70vh] flex flex-wrap justify-center items-center">
+
+      <section className="bg-gray-200 w-full h-auto flex flex-wrap justify-center py-20 items-center gap-10">
 
         <div className="border-[1px] bg-white border-black w-[250px] h-[320px] rounded-2xl p-2">
           <div className=" w-full h-[50%] mb-5 flex justify-center items-center">
