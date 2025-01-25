@@ -43,7 +43,7 @@ const NavbarPage = () => {
           <Link
             to={"/contact"}
             onClick={closeMenu}
-            className="focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
+            className=" md:focus:border-b-[1px] md:focus:border-black"
           >
             Contact me
           </Link>

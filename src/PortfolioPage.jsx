@@ -1,5 +1,6 @@
 import React from "react";
-import FooterPage from "./FooterPage";
+import PortfolioImg from '../public/portfolio-img1.png'
+import { Link } from 'react-router-dom'
 
 const PortfolioPage = () => {
   return (
@@ -9,7 +10,24 @@ const PortfolioPage = () => {
           PORTFOLIO
         </div>
       </div>
-      <section className="bg-gray-200 w-full h-screen"></section>
+      <section className="bg-gray-200 w-full h-[70vh] flex flex-wrap justify-center items-center">
+
+        <div className="border-[1px] bg-white border-black w-[250px] h-[320px] rounded-2xl p-2">
+          <div className=" w-full h-[50%] mb-5 flex justify-center items-center">
+            <img className="hover:scale-105 transition ease-in" src={PortfolioImg} alt="" />
+          </div>
+
+          <center className="font-bold text-xl">
+            Project One
+          </center>
+
+          <div className="w-full h-[30%] flex justify-around items-center">
+            <button className="px-5 py-2 font-medium text-sm rounded-full hover:bg-black hover:text-white transition ease-in border-[1px] border-black"><Link target="_blank" to={'https://github.com/hojiakbarsobirov/My-Portfolio'}>GitHub</Link></button>
+            <button className="px-4 font-medium  text-sm py-2 rounded-full hover:bg-black hover:text-white transition ease-in border-[1px] border-black">Live Demo</button>
+          </div>
+        </div>
+
+      </section>
     </>
   );
 };
