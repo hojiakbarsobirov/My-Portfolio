@@ -28,7 +28,7 @@ const SkillsPage = () => {
           <p></p>
         </div>
 
-        <header className="w-full h-auto  px-3 py-2 flex flex-wrap justify-center items-center flex-1 gap-10">
+        <header className="w-full h-auto  px-14 py-2 flex flex-wrap justify-center items-center flex-1 gap-10">
           <div className="flex justify-center items-center space-x-2 rounded-xl shadow-lg px-4 py-2">
             <img className="w-6" src={HTMLlogo} alt="" />
             <p className="font-medium text-sm">HTML5</p>
