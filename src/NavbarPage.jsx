@@ -27,10 +27,11 @@ const NavbarPage = () => {
       {/* Menu */}
       <ul
         className={`${
-          isOpen ? "block" : "hidden"
-        } absolute top-16 left-0 bg-white w-full shadow-lg md:static md:flex md:space-x-10 md:shadow-none font-medium items-center text-[18px]`}
+          isOpen ? "flex" : "hidden"
+        } absolute top-16 left-0 bg-white w-full shadow-lg md:static md:flex md:space-x-10 md:shadow-none font-medium items-center text-[18px] 
+        flex-wrap justify-center gap-5 py-3 md:py-0`}
       >
-        <li className="border-b md:border-none flex justify-center items-center py-4">
+        <li className="border-b md:border-none">
           <Link
             className="block py-2 px-5 md:py-0 focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
             to={"/"}
@@ -39,15 +40,17 @@ const NavbarPage = () => {
             Home
           </Link>
         </li>
-        <button className="block bg-black text-white text-sm px-3 py-4 rounded-full mx-auto md:mx-0">
-          <Link
-            to={"/contact"}
-            onClick={closeMenu}
-            className=" md:focus:border-b-[1px] md:focus:border-black"
-          >
-            Contact me
-          </Link>
-        </button>
+        <li>
+          <button className="bg-black text-white text-sm px-3 py-2 rounded-full">
+            <Link
+              to={"/contact"}
+              onClick={closeMenu}
+              className="md:focus:border-b-[1px] md:focus:border-black"
+            >
+              Contact me
+            </Link>
+          </button>
+        </li>
       </ul>
     </section>
   );
