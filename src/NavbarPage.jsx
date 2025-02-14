@@ -28,10 +28,9 @@ const NavbarPage = () => {
       <ul
         className={`${
           isOpen ? "flex" : "hidden"
-        } absolute top-16 left-0 bg-white w-full shadow-lg md:static md:flex md:space-x-10 md:shadow-none font-medium items-center text-[18px] 
-        flex-wrap justify-center gap-5 py-3 md:py-0`}
+        } absolute top-16 left-0 bg-white w-full shadow-lg md:static md:flex md:space-x-10 md:shadow-none font-medium items-center text-[18px] flex-wrap justify-center gap-5 py-3 md:py-0`}
       >
-        <li className="border-b md:border-none">
+        <li className="border-b md:border-none flex justify-center items-center py-4">
           <Link
             className="block py-2 px-5 md:py-0 focus:bg-gray-200 md:focus:bg-white md:focus:border-b-[1px] md:focus:border-black"
             to={"/"}
@@ -41,15 +40,13 @@ const NavbarPage = () => {
           </Link>
         </li>
         <li>
-          <button className="bg-black text-white text-sm px-3 py-2 rounded-full">
-            <Link
-              to={"/contact"}
-              onClick={closeMenu}
-              className="md:focus:border-b-[1px] md:focus:border-black"
-            >
-              Contact me
-            </Link>
-          </button>
+          <Link
+            to={"/contact"}
+            onClick={closeMenu}
+            className="block bg-black text-white text-sm px-3 py-2 rounded-full"
+          >
+            Contact me
+          </Link>
         </li>
       </ul>
     </section>
